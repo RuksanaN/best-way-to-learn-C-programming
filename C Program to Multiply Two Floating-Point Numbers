@@ -1,0 +1,29 @@
+In this example, the product of two floating-point numbers entered by the user is calculated and printed on the screen.
+
+#include <stdio.h>
+int main() {
+    double a, b, product;
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &a, &b);  
+ 
+    // Calculating product
+    product = a * b;
+
+    // %.2lf displays number up to 2 decimal point
+    printf("Product = %.2lf", product);
+    
+    return 0;
+}
+
+OUTPUT
+Enter two numbers: 2.4
+1.12
+Product = 2.69
+
+HOW IT WORKS
+
+In this program, the user is asked to enter two numbers which are stored in variables a and b respectively.
+Then, the product of a and b is evaluated and the result is stored in product.
+Finally, product is displayed on the screen using printf().
+Notice that, the result is rounded off to the second decimal place using %.2lf conversion character
+
